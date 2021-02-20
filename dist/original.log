@@ -1,8 +1,0 @@
-Traceback (most recent call last):
-  File "original.py", line 126, in <module>
-  File "PIL\Image.pyc", line 2891, in open
-FileNotFoundError: [Errno 2] No such file or directory: 'limpiar.png'
-Traceback (most recent call last):
-  File "original.py", line 126, in <module>
-  File "PIL\Image.pyc", line 2891, in open
-FileNotFoundError: [Errno 2] No such file or directory: 'limpiar.png'
