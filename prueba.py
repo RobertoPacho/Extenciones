@@ -1,0 +1,20 @@
+import tkinter as tk
+
+ventana = tk.Tk()
+ventana.title("PICTOGRAMAS")
+scrollbar=tk.Scrollbar(ventana)
+
+
+lienzo1=tk.Canvas(ventana,background="pink",yscrollcommand=scrollbar.set)
+scrollbar.config(command=lienzo1.yview)
+scrollbar.pack(side=tk.RIGHT,fill=tk.Y)
+
+panelImagenes = tk.Frame(lienzo1)
+lienzo1.pack(side="left",fill="both",expand=True)
+lienzo1.create_window(0,0,window=panelImagenes,anchor='nw')
+texto=tk.Label(panelImagenes,wraplength=100,text="suuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuggggggggggggggggggggggggggggggggggggggggggggggggggggggggggffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcccccccccccccccccccccccccccccccccccccccccccccccccccccccxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzsooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo0000000000000000000000000000000000000000000888888888888888888888888888888886666666666666666666ssssssssssssssssssssssssssssssssssssseeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrttttttttttttttttttttttttttttttttttttttttttttttttttttttttssssssssssssssssssssssssssssssssssssssssssscccccccccccccccccccccccccccccccccfffffffffffffffffffffssssssssssssssssssssssssssss")
+
+texto.pack()
+ventana.update()
+lienzo1.config(scrollregion=lienzo1.bbox("all"))
+ventana.mainloop()
